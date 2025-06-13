@@ -27,3 +27,45 @@ This project demonstrates my contribution to a data pipeline at Amazon that inge
 - Validated Redshift table schemas against business rules.
 - Conducted A/B testing on data load logic to improve batch success rate.
 
+## 📁 Structure
+aws_customer_concessions_pipeline/
+│
+├── README.md
+├── src/
+│ ├── extract.py
+│ ├── transform.py
+│ ├── load.py
+│ └── utils.py
+├── notebooks/
+│ └── data_quality_checks.ipynb
+├── dashboards/
+│ └── dashboard_mockup.png
+└── config/
+└── pipeline_config.yaml
+
+
+### 2. `src/` folder
+
+- `extract.py` – handles API data pulls
+- `transform.py` – flattens/cleans JSON
+- `load.py` – writes to Redshift
+- `utils.py` – helper functions (logging, config loading)
+
+---
+
+### 3. `notebooks/` folder
+
+- Exploratory data analysis (EDA)
+- Data profiling
+- Quality checks
+- Example queries (Snowflake, Redshift)
+
+---
+
+### 4. `config/` folder
+- S3 bucket paths
+- Database credentials (mock or env-based)
+- File partitions or table schemas
+
+---
+
